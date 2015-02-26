@@ -1,0 +1,49 @@
+<html>
+<head>
+<title> Welcome </title>
+<script src="processing-1.4.1.js"></script>
+<script type="text/processing" data-processing-target="mycanvas">
+
+/* @pjs globalKeyEvents ="true"; */
+
+PImage backgroundImage;
+
+void setup(){
+
+size (1250,900);
+background (176,176,176);
+frameRate (30);
+
+backgroundImage = loadImage("image/Welcome Final Image.jpg")
+
+}
+
+
+void draw()
+{
+background (176,176,176);
+
+//link to Main Menu
+
+	if (keyPressed == true)
+	{
+		if (key == ' ')
+		{
+			link("Main_Menu.html");
+		}
+	}
+
+//background
+
+image(backgroundImage,0,0,1250,900);
+
+}
+
+</script>
+<canvas id="mycanvas"></canvas>
+</head>
+
+<body>
+
+</body>
+</html>
